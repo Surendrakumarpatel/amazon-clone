@@ -11,7 +11,7 @@ const SingleProduct = ({ singleProduct }: { singleProduct: any }) => {
                 {
                         singleProduct.map((product: any) => {
                             return (
-                                <div className='flex'>
+                                <div key={product.id} className='flex'>
                                 <div className='flex'>
                                     <div className='bg-gray-100'>
                                         <Image className='mix-blend-multiply p-4' src={product.image} width={300} height={300} alt={product.title} />
@@ -23,9 +23,9 @@ const SingleProduct = ({ singleProduct }: { singleProduct: any }) => {
                                         <h1 className='font-bold'>{`$${product.price}`}</h1>
                                         <div>
                                             <h1 className='font-bold text-sm'>About this item</h1>
-                                            <li>Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 8GB of RAM including 4GB virtual | 6.74" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery</li>
-                                            <li>Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 8GB of RAM including 4GB virtual | 6.74" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery</li>
-                                            <li>Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 8GB of RAM including 4GB virtual | 6.74" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery</li>
+                                            <li>Processor: High performance MediaTek G85 Enhance gaming with 1GHz GPU 8GB of RAM including 4GB virtual 6.74 HD+ 90Hz display with Corning Gorilla Glass 3 Protection 50MP AI Triple camera Fast Side fingerprint 5000mAh Battery</li>
+                                            <li>Processor: High performance MediaTek G85 Enhance gaming with 1GHz GPU 8GB of RAM including 4GB virtual 6.74 HD+ 90Hz display with Corning Gorilla Glass 3 Protection 50MP AI Triple camera Fast Side fingerprint 5000mAh Battery</li>
+                                            <li>Processor: High performance MediaTek G85 Enhance gaming with 1GHz GPU 8GB of RAM including 4GB virtual 6.74 HD+ 90Hz display with Corning Gorilla Glass 3 Protection 50MP AI Triple camera Fast Side fingerprint 5000mAh Battery</li>
                                         </div>
                                     </div>
                                 </div>

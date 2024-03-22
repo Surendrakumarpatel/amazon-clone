@@ -16,7 +16,7 @@ const ShoppingCart = ({cart, totalPrice}:{cart:any, totalPrice:number}) => {
             {
                 cart.map((product: any) => {
                     return (
-                        <div className='py-4 flex justify-between  border-b border-gray-200'>
+                        <div key={product.id} className='py-4 flex justify-between  border-b border-gray-200'>
                             <div className='flex'>
                                 <div>
                                     <Image src={product.image} width={100} height={100} alt={product.title} />

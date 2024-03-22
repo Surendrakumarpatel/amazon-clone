@@ -16,7 +16,7 @@ const Success = () => {
                     {
                         cart.map((product: any) => {
                             return (
-                                <div>
+                                <div key={product.id}>
                                     <div className='flex'>
                                     <Image src={product.image} alt={product.title} width={100} height={100} />
                                     <div className='ml-5 font-bold'>

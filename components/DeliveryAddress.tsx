@@ -25,7 +25,7 @@ const DeliveryAddress = () => {
                 {
                     cart.map((product: any) => {
                         return (
-                            <div className='my-4'>
+                            <div key={product.id} className='my-4'>
                                 <div className='flex'>
                                     <Image src={product.image} alt={product.title} width={100} height={100} />
                                     <div className='ml-4'>
